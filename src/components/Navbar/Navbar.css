@@ -1,0 +1,86 @@
+.navbar {
+    position: fixed;           /* 👈 Fija el navbar al tope */
+    top: 0;
+    left: 0;
+    width: 100vw;              /* 👈 Ocupa todo el ancho de la pantalla */
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'SamsungOne', Arial, sans-serif;
+    z-index: 1000;             /* 👈 Asegura que esté por encima del contenido */
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo del input */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 0.5rem 1rem;
+  }
+  
+  .search-icon {
+    color: #888;
+    margin-right: 0.5rem;
+  }
+  
+  .search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'SamsungOne', Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    width: 150px; /* Ancho del input, puedes ajustarlo */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #0075c9;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #0075c9;
+  }
+
+  .nav-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espacio entre la barra de búsqueda y los íconos */
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .navbar a {
+      font-size: 0.9rem;
+    }
+  }
+  
