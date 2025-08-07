@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import logoSam from "../../assets/logoSam.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <Link to="/"> 
+      <img src={logoSam} alt="Logo" className="logo-img" />
+      </Link>
       <Link to="/">Home</Link>
       <Link to="/producto-detalle">Detalle</Link>
       <Link to="/productos">Productos</Link>
@@ -18,7 +22,7 @@ const Navbar = () => {
         <Link to="/carrito" className="nav-icon-link">
           <i className="fas fa-shopping-cart"></i>
         </Link>
-        <Link to="/perfil" className="nav-icon-link">
+        <Link to="/usuario" className="nav-icon-link">
           <i className="fas fa-user"></i>
         </Link>
       </div>

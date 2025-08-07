@@ -23,6 +23,16 @@
     transition: color 0.2s ease;
   }
   
+  .logo-img{
+
+    height: 1.55rem; /* Coincide visualmente con los links de texto */
+    object-fit: contain;
+    margin-left: 0px;
+    margin-top: 2px; /* Ajuste fino opcional */
+
+  }
+
+
   .search-bar {
     display: flex;
     align-items: center;
