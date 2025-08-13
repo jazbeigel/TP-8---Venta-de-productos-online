@@ -1,0 +1,256 @@
+/* ProductoDetalle.css - Estilos modernos y elegantes */
+
+.producto-detalle {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem 0;
+  margin-top: 50px;
+}
+
+.producto-detalle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.producto-detalle-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Imagen del producto */
+.producto-imagen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto-imagen:hover {
+  transform: scale(1.02);
+}
+
+.producto-imagen img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Información del producto */
+.producto-info {
+  padding: 1rem;
+}
+
+.producto-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.producto-categoria {
+  margin-bottom: 1rem;
+}
+
+.categoria-badge {
+  background: linear-gradient(135deg, #c07639 0%, #b039c0 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  margin-top: 40%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.producto-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rating-estrellas {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.rating-texto {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.producto-precio {
+  margin-bottom: 1.5rem;
+}
+
+.precio-actual {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e74c3c;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.producto-descripcion {
+  margin-bottom: 2rem;
+}
+
+.producto-descripcion h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.producto-descripcion p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Acciones del producto */
+.producto-acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cantidad-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cantidad-selector label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cantidad-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+
+.cantidad-controls button {
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.cantidad-controls button:hover {
+  background: #e9e9e9;
+}
+
+.cantidad-controls span {   
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.btn-agregar-carrito {
+  background: #2980b9;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-agregar-carrito:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Detalles adicionales */
+.producto-detalles-adicionales {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+}
+
+.producto-detalles-adicionales h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.producto-detalles-adicionales ul {
+  list-style: none;
+  padding: 0;
+}
+
+.producto-detalles-adicionales li {
+  padding: 0.5rem 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.producto-detalles-adicionales li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .producto-detalle-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .producto-titulo {
+    font-size: 2rem;
+  }
+  
+  .producto-imagen img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto-detalle {
+    padding: 1rem 0;
+  }
+  
+  .producto-detalle-container {
+    padding: 1rem;
+  }
+  
+  .producto-titulo {
+    font-size: 1.5rem;
+  }
+}

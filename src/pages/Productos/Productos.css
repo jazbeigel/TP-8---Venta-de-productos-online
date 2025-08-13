@@ -1,0 +1,48 @@
+.productos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.titulo-productos {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.loading {
+  color: #3498db;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .titulo-productos {
+    font-size: 2rem;
+  }
+}
