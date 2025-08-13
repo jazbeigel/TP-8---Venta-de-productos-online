@@ -29,8 +29,8 @@ const QuienesSomos = () => {
                 supera las expectativas.
               </p>
             </div>
-              <div className="image">
-              <img src={empresa} alt="empresa" ></img>
+              <div className="image-contenedor">
+              <img src={empresa} alt="empresa"  className="image"></img>
               </div>
           </div>
         </div>
