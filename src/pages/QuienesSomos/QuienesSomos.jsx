@@ -66,7 +66,7 @@ const QuienesSomos = () => {
             <div className="team-member">
               <div className="member-avatar">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                  src="https://media.istockphoto.com/id/1225790722/es/vector/vector-de-icono-de-perfil-de-usuario-s%C3%ADmbolo-de-retrato-de-avatar-logotipo-de-persona-de.jpg?s=612x612&w=0&k=20&c=dGoBtrqB4j6euTCTqgX2RaRD7Jtjhdekj4vZWk9tEOo=" 
                   alt="Carlos Rodríguez" 
                   className="team-photo"
                 />
@@ -77,7 +77,7 @@ const QuienesSomos = () => {
             <div className="team-member">
               <div className="member-avatar">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" 
+                  src="https://media.istockphoto.com/id/1225790722/es/vector/vector-de-icono-de-perfil-de-usuario-s%C3%ADmbolo-de-retrato-de-avatar-logotipo-de-persona-de.jpg?s=612x612&w=0&k=20&c=dGoBtrqB4j6euTCTqgX2RaRD7Jtjhdekj4vZWk9tEOo=" 
                   alt="María González" 
                   className="team-photo"
                 />
@@ -88,7 +88,7 @@ const QuienesSomos = () => {
             <div className="team-member">
               <div className="member-avatar">
                 <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
+                  src="https://media.istockphoto.com/id/1225790722/es/vector/vector-de-icono-de-perfil-de-usuario-s%C3%ADmbolo-de-retrato-de-avatar-logotipo-de-persona-de.jpg?s=612x612&w=0&k=20&c=dGoBtrqB4j6euTCTqgX2RaRD7Jtjhdekj4vZWk9tEOo=" 
                   alt="Juan Pérez" 
                   className="team-photo"
                 />

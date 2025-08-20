@@ -163,6 +163,15 @@
   font-weight: 600;
 }
 
+.team-photo{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-right: 20px;
+
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -189,7 +198,7 @@
 .avatar-placeholder {
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background:#3498db;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -221,7 +230,7 @@
 
 .stats-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #57768a;
   color: white;
 }
 

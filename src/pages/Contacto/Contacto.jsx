@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import logoDirec from '../../assets/logoDirec.png';
+import llamar from '../../assets/llamar.jpg';
+import email from '../../assets/email.jpg';
+import chat from '../../assets/chat.png';
 import './Contacto.css'
 
 const Contacto = () => {
@@ -55,27 +58,27 @@ const Contacto = () => {
               
               <div className="info-cards">
                 <div className="info-card">
-                  <div className="info-icon"><img src={logoDirec} alt="empresa" className="logos" /></div>
+                  <div className="logos"><img src={logoDirec} alt="empresa" className="fotos"/></div>
                   <h3>Dirección</h3>
                   <p>Av. Principal 1234<br />Ciudad, País</p>
                 </div>
                 
                 <div className="info-card">
-                  <div className="info-icon">📞</div>
+                  <div className="logos"><img src={llamar} alt="empresa" className="fotos"/></div>
                   <h3>Teléfono</h3>
                   <p>+54 11 1234-5678</p>
                   <p>Lunes a Viernes: 9:00 - 18:00</p>
                 </div>
                 
                 <div className="info-card">
-                  <div className="info-icon">📧</div>
+                  <div className="logos"><img src={email} alt="empresa" className="fotos"/></div>
                   <h3>Email</h3>
                   <p>info@empresa.com</p>
                   <p>Respuesta en 24 horas</p>
                 </div>
                 
                 <div className="info-card">
-                  <div className="info-icon">💬</div>
+                  <div className="logos"><img src={chat} alt="empresa" className="fotos" /></div>
                   <h3>Chat en Vivo</h3>
                   <p>Disponible 24/7 en nuestro sitio</p>
                 </div>
@@ -113,64 +116,65 @@ const Contacto = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <label htmlFor="nombre">Nombre completo *</label>
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      value={formData.nombre}
-                      onChange={handleChange}
-                      required
-                      placeholder="Tu nombre completo"
-                    />
-                  </div>
+                  <div className='total-de-botones'>
+                    <div className="form-group">
+                      <label htmlFor="nombre">Nombre completo *</label>
+                      <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        value={formData.nombre}
+                        onChange={handleChange}
+                        required
+                        placeholder="Tu nombre completo"
+                      />
+                    </div>
 
-                  <div className="form-group">
-                    <label htmlFor="email">Email *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="tu@email.com"
-                    />
-                  </div>
+                    <div className="form-group">
+                      <label htmlFor="email">Email *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder="tu@email.com"
+                      />
+                    </div>
 
-                  <div className="form-group">
-                    <label htmlFor="asunto">Asunto *</label>
-                    <select
-                      id="asunto"
-                      name="asunto"
-                      value={formData.asunto}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="">Selecciona un asunto</option>
-                      <option value="consulta">Consulta general</option>
-                      <option value="producto">Información de producto</option>
-                      <option value="pedido">Estado de pedido</option>
-                      <option value="devolucion">Devolución</option>
-                      <option value="sugerencia">Sugerencia</option>
-                      <option value="otro">Otro</option>
-                    </select>
-                  </div>
+                    <div className="form-group">
+                      <label htmlFor="asunto">Asunto *</label>
+                      <select
+                        id="asunto"
+                        name="asunto"
+                        value={formData.asunto}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="">Selecciona un asunto</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="producto">Información de producto</option>
+                        <option value="pedido">Estado de pedido</option>
+                        <option value="devolucion">Devolución</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otro">Otro</option>
+                      </select>
+                    </div>
 
-                  <div className="form-group">
-                    <label htmlFor="mensaje">Mensaje *</label>
-                    <textarea
-                      id="mensaje"
-                      name="mensaje"
-                      value={formData.mensaje}
-                      onChange={handleChange}
-                      required
-                      rows="5"
-                      placeholder="Describe tu consulta o comentario..."
-                    ></textarea>
+                    <div className="form-group">
+                      <label htmlFor="mensaje">Mensaje *</label>
+                      <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        value={formData.mensaje}
+                        onChange={handleChange}
+                        required
+                        rows="5"
+                        placeholder="Describe tu consulta o comentario..."
+                      ></textarea>
+                    </div>
                   </div>
-
                   <button type="submit" className="submit-btn">
                     Enviar Mensaje
                   </button>

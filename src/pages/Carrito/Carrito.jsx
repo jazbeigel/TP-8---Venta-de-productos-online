@@ -8,16 +8,24 @@ const Carrito = () => {
 
   if (items.length === 0) {
     return (
-      <div className="Carrito">
-        <h2>Carrito de Compras</h2>
-        <p>Tu carrito está vacío</p>
+      <div className="titulo-carrito">
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Tu carrito de compras</h1>
+          </div>
+        </section>
+        <p className="subtitulo">Vacío</p>
       </div>
     );
   }
 
   return (
-    <div className="Carrito">
-      <h2>Carrito de Compras</h2>
+    <div className="titulo-carrito">
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Tu carrito de compras</h1>
+        </div>
+      </section>
       <div className="carrito-items">
         {items.map(item => (
           <div key={item.id} className="carrito-item">
